@@ -1,8 +1,8 @@
 const App = (() => {
 	const sw = async () => {
 		try {
-			await navigator.serviceWorker.register('../sw_cached_pages.js')
-			// await navigator.serviceWorker.register('../sw_cached_site.js')
+			// await navigator.serviceWorker.register('../sw_cached_pages.js')
+			await navigator.serviceWorker.register('../sw_cached_site.js')
 		} catch (err) {
 			console.log(`Service Worker: Error: ${err}`)
 		}
